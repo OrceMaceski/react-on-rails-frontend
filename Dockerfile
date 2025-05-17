@@ -12,6 +12,9 @@ RUN npm install
 
 COPY . .
 
+# Inject env var for Vite to use at build time
+RUN echo "VITE_API_URL=$VITE_API_URL" > .env.production
+
 RUN npm run build
 
 # Serve stage
