@@ -13,7 +13,7 @@ function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-console.log(import.meta.env.VITE_API_URL);
+
     if (!email || !password || !passwordConfirmation) {
       return setError('Please fill in all fields')
     }
