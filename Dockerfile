@@ -10,7 +10,7 @@ RUN npm install
 
 COPY . .
 
-RUN VITE_API_URL=$VITE_API_URL npm run build
+RUN npm run build
 
 FROM nginx:alpine
 
